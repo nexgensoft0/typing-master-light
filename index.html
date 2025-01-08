@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
     <h2>typing master</h2>
-</body>
+    <section class="min-h-screen bg-purple-400 mb-3" id="section1">
+      <h1>lets play</h1>
+      <button onclick="enterGame()" class="btn">Enter Game</button>
+    </section>
+    <section class="min-h-screen bg-purple-400 mb-3 hidden" id="section2">
+      <h1>Battle Ground</h1>
+      <button onclick="playGame()" class="btn">Play Game</button>
+    </section>
+    <section class="min-h-screen bg-purple-400 mb-3 hidden" id="section3">
+      <h1>Play Again</h1>
+      <button onclick="playAgainGame()" class="btn">Play Again Game</button>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
